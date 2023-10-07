@@ -1,0 +1,285 @@
+/* Section 1 */
+
+.main-section {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/main-section-bg.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 860px;
+    &__content {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 202px 0 0;
+        padding: 320px 0 0;
+    }
+    &__social {
+        align-self: end;
+    }
+    &__title {
+	    text-align: center;
+    }
+    &__text {
+        margin: 16px 0 43px;
+    }
+    &__button {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 18px 92px;
+        background-color: #DB4E66;
+        border-radius: 14px;
+        margin-bottom: 68px;
+        transition: 0.5s ease;
+    }
+    &__button:hover {
+        color: #420000;
+        background-color: #B0354A;
+    }
+    &__social {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+/* Section 2 */
+
+.promo {
+    padding-bottom: 82px;
+    &__content-top {
+        display: flex;
+        justify-content: space-between;
+        margin: 48px 0 34px;
+    }
+    &__title {
+        color: #5b636b;
+    }
+    &__link {
+        text-transform: uppercase;
+        color: #DB4E66;
+    }
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-slide {
+    box-shadow: 0px 0px 14px -7px #333;
+    border-radius: 14px;
+    width: 100vw;
+    max-width: 564px;
+    &__link {
+        padding: 36px 35px 40px;
+    }
+}
+
+.promo-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+    &__img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        background-color: var(--accent);
+        border-radius: 14px;
+        color: #fff;
+        height: 118px;
+        width: 118px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+    &__img-top {
+        align-self: end;
+    }
+    &__img-bottom {
+        align-self: start;
+    }
+
+    &__title {
+        grid-column: 2 / 4;
+        grid-row: 1 / 1;
+        color: #DB4E66;
+    }
+    &__text {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+    }
+}
+
+.swiper-button-prev {
+    color: #DB4E66;
+    font-weight: 700;
+    top: 50%;
+    left: -15%;
+}
+
+.swiper-button-next {
+    color: #DB4E66;
+    font-weight: 700;
+    top: 50%;
+    right: -15%;
+}
+
+/* Section 3 */
+
+.content-catalog {
+    margin: 81px 0 101px;
+    &__top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 16px;
+    }
+    &__title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    &__subtitle {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    &__link {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        justify-self: end;
+        align-self: center;
+        text-transform: uppercase;
+        color: #DB4E66;
+    }
+}
+
+.bottom-catalog {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-catalog {
+    &__link {
+        display: block;
+        margin-bottom: 21px;
+    }
+    padding: 24px 25px 29px;
+    box-shadow: 0px 0px 14px -7px #333;
+    border-radius: 14px;
+    max-width: 365px;
+    position: relative;
+    &__age {
+        position: absolute;
+        right: 25px;
+        padding: 5px 14px;
+        border-radius: 7px;
+        background-color: #90c1bf;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+    }
+    &__title {
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 24px 0 0 34px;
+        padding-left: 11px;
+    }
+    &__description-time {
+        position: relative;
+    }
+    &__description-time::before {
+        content: url(./../images/icons/sandglass.svg);
+        position: absolute;
+        top: -3px;
+        left: -45px;
+    }
+    &__description-players {
+        position: relative;
+    }
+    &__description-players::before {
+        content: url(./../images/icons/smile.svg);
+        position: absolute;
+        top: -3px;
+        left: -45px;
+    }
+    &__description-preparation {
+        position: relative;
+    }
+    &__description-preparation::before {
+        content: url(./../images/icons/time-back.svg);
+        position: absolute;
+        top: -3px;
+        left: -45px;
+    }
+    &__description-places {
+        position: relative;
+    }
+    &__description-places::before {
+        content: url(./../images/icons/ball.svg);
+        position: absolute;
+        top: -3px;
+        left: -45px;
+    }
+    &__description-difficult {
+        position: relative;
+    }
+    &__description-difficult::before {
+        content: url(./../images/icons/brain.svg);
+        position: absolute;
+        top: -3px;
+        left: -45px;
+    }
+    &__price {
+        text-align: center;
+        margin: 24px 0 24px;
+        color: #DB4E66;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        padding: 17px 58px 18px;
+        border-radius: 14px;
+        background: var(--accent);
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+/* Section 4 */
+
+.video {
+    min-height: 1240px;
+    background-image: url('/images/video-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    &__content {
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle
+    }
+}
+
+.content-video {
+    &__frame {
+        width: 765px;
+        height: 420px;
+        border-radius: 8px;
+        background: #F1F1F1;
+        position: relative;
+    }
+    &__play {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+    }
+}

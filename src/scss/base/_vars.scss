@@ -1,0 +1,23 @@
+:root {
+	//параметры контейнера
+	--container-width: 1188px;
+	--container-padding: 20px;
+
+	//шрифты по умолчанию
+	--font-main: 'Rubik', sans-serif;;
+	--font-accent: 'Roboto', sans-serif;
+
+	//параметры цветов
+	--page-bg: #fafaf9;
+	--text-color: #222528;
+	--accent: #f2b236;
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {											// для создания темной темы сайта необходимо добавить данный класс к тегу body
+    --page-bg: #252526;
+    --text-color: #fff;
+}

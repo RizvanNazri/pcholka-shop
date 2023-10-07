@@ -1,0 +1,150 @@
+.header {
+	background-color: #fafaf9;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	&__top {
+		padding: 10px 0;
+		background: linear-gradient(to bottom right, #F2B236, #FF9C1A);;
+	}
+}
+
+.top-header {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 124px;
+	}
+	&__contacts {
+		display: flex;
+		justify-content: space-between;
+		color: #884900;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	&__phone {
+		color: inherit;
+		padding: 0 3px;
+	}
+	&__schedule {
+		padding: 0 3px;
+	}
+}
+
+.search-header {
+	margin-right: 12px;
+	width: 327px;
+	border: 0px;
+	border-radius: 26px;
+	background-color: var(--page-bg);
+	position: relative;
+	&__input {
+		height: 45px;
+		padding: 14px 21px 12px;
+		color: #a5aaaf;
+	}
+	&__button {
+		position: absolute;
+		height: 45px;
+		padding: 7px;
+		top: 0;
+		right: 12px;
+	}
+	&__button-img {
+		fill: #a5aaaf;
+	}
+}
+
+.cabinet-header {
+	margin-left: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__cart {
+		margin-right: 12px;
+		padding: 4px 8px;
+		background-color: var(--page-bg);
+		border-radius: 12px;
+		cursor: pointer;
+		position: relative;
+		span {
+			position: absolute;
+			background-color: #db4e66;
+			color: #fff;
+			font-size: 11px;
+			font-weight: 500;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 3px;
+			right: 3px;
+		}
+	}
+	&__user {
+		margin-left: 12px;
+		padding: 7px;
+		background-color: var(--page-bg);
+		border-radius: 12px;
+	}
+}
+
+.bottom-header {
+	box-shadow: 0 6px 18px -12px #333;
+}
+
+.menu-header {
+	&__list {
+		display: flex;
+		justify-content: end;
+	}
+	&__item {
+		transition: 0.5s ease;
+	}
+	&__item:last-child {
+		position: relative;
+		display: block;
+		transition: 0.4s ease;
+   	}
+	&__item:last-child:hover > .sub-menu__list {
+		display: initial;
+   	}
+
+	&__item:hover {
+ 		background-color: var(--accent);
+		display: block;
+	}
+	&__link {
+		padding: 20px;
+		display: block;
+		transition: 0.3s ease;
+	}
+	&__link:hover {
+		color: #fff;
+	}
+}
+
+.sub-menu {
+	&__list {
+		top: 58px;
+		left: 0;
+		width: 100%;
+		position: absolute;
+		display: none;
+		background-color: var(--page-bg);
+		box-shadow: 0px 12px 18px -12px #333;
+	}
+	&__link {
+		padding: 20px;
+		display: block;
+		transition: 0.3s ease;
+	}
+	&__link:hover {
+		color: #fff;
+ 		background-color: var(--accent);
+	}
+}
